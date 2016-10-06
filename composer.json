@@ -1,0 +1,12 @@
+{
+    "name": "skybet/tech-test",
+    "require": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "TechTest\\": "src/",
+            "TechTest\\Tests\\": "tests/src"
+        }
+    }
+}
