@@ -1,0 +1,22 @@
+{
+  "name": "tech-test",
+  "version": "1.0.0",
+  "description": "NodeJS/JavaScript boilerplate for TDD training",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive ./test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ls12styler/tech-test.git"
+  },
+  "author": "Ashley Broadley <ashley.broadley@skybettingandgaming.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ls12styler/tech-test/issues"
+  },
+  "homepage": "https://github.com/ls12styler/tech-test#readme",
+  "dependencies": {
+    "mocha": "^3.2.0"
+  }
+}
