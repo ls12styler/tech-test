@@ -174,14 +174,29 @@
 * @return void
 * @throws Error
 
-#### fetchCustomers()
+#### getAll()
 
 * @return Array[CustomerDataModel]
 * @throws Error
 
-#### fetchCustomer(ID)
+#### findById(ID)
 
 * @params
     * ID - Integer - The ID of the customer to fetch
 * @return CustomerDataModel
+* @throws Error
+
+#### save(CustomerDataModel)
+
+* @params
+    * CustomerDataModel - The representation of the customer to save to the store
+* @return CustomerDataModel
+* @throws Error
+
+
+#### delete(CustomerDataModel)
+
+* @params
+    * CustomerDataModel - The representation of the Customer that we should delete
+* @return void
 * @throws Error
