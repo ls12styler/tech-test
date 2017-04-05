@@ -106,6 +106,13 @@
 
 ## Customer Data Mapper
 
+#### constructor(DataStore)
+
+* @params
+    * DataStore - Object - The data persistence driver
+* @return void
+* @throws Error
+
 #### fetch(id)
 
 * @params
@@ -115,7 +122,7 @@
 
 #### save(CustomerDataModel)
 
-* @params 
+* @params
     * CustomerDataModel - The representation of the customer to save to the store
 * @return CustomerDataModel
 * @throws Error
@@ -125,4 +132,56 @@
 * @params
     * CustomerDataModel - The representation of the Customer that we should delete
 * @return void
+* @throws Error
+
+## Address Data Mapper
+
+#### constructor(DataStore)
+
+* @params
+    * DataStore - Object - The data persistence driver
+* @return void
+* @throws Error
+
+#### fetch(id)
+
+* @params
+    *  ID - Integer - The ID of the address data to fetch
+* @return AddressDataModel
+* @throws Error
+
+#### save(AddressDataModel)
+
+* @params
+    * AddressDataModel - The representation of the Address to save to the store
+* @return CustomerDataModel
+* @throws Error
+
+#### delete(AddressDataModel)
+
+* @params
+    * AddressDataModel - The representation of the Address that we should delete
+* @return void
+* @throws Error
+
+## Customer Repository
+
+#### constructor(CustomerMapper, AddressMapper)
+
+* @params
+    * CustomerMapper - CustomerDataMapper - The DB interaction layer for Customers
+    * AddressMapper - AddressDataMapper - The DB interaction layer for Addresses
+* @return void
+* @throws Error
+
+#### fetchCustomers()
+
+* @return Array[CustomerDataModel]
+* @throws Error
+
+#### fetchCustomer(ID)
+
+* @params
+    * ID - Integer - The ID of the customer to fetch
+* @return CustomerDataModel
 * @throws Error
