@@ -10,12 +10,12 @@
 
 #### getId()
 
-* @return String
+* @return Integer
 
 #### setId(ID)
 
 * @params
-    * Name - String - The ID of the customer in the database
+    * ID - Integer - The ID of the customer in the database
 * @return void
 * @throws Error
 
@@ -73,12 +73,12 @@
 
 #### getId()
 
-* @return String
+* @return Integer
 
 #### setId(Id)
 
 * @params
-    * Name - String - The ID of the address in the database
+    * ID - Integer - The ID of the address in the database
 * @return void
 * @throws Error
 
