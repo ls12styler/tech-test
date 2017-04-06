@@ -8,6 +8,17 @@
     * Data - Object - The data used to create the CustomerDataModel
 * @return void
 
+#### getId()
+
+* @return String
+
+#### setId(ID)
+
+* @params
+    * Name - String - The ID of the customer in the database
+* @return void
+* @throws Error
+
 #### getFirstName()
 
 * @return String
@@ -59,6 +70,17 @@
 * @params
     * Data - Object - The data used to create the CustomerDataModel
 * @return void
+
+#### getId()
+
+* @return String
+
+#### setId(Id)
+
+* @params
+    * Name - String - The ID of the address in the database
+* @return void
+* @throws Error
 
 #### getHouseNumber()
 
